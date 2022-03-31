@@ -20,11 +20,17 @@ public class Puzzle {
 
     public static class Result {
         public int[] path;
-        public String report;
+        public int open;
+        public long time;
+        public int level;
+        public int cost;
 
-        public Result(int[] path, String report) {
+        public Result(int[] path, int open, long time, int level, int cost) {
             this.path = path;
-            this.report = report;
+            this.open = open;
+            this.time = time;
+            this.level = level;
+            this.cost = cost;
         }
     }
 
@@ -156,8 +162,8 @@ public class Puzzle {
                     "\nExecution time: " + duration/1000000 + "ms" +
                     "\nSolution found at level: " + node.getLevel() + "\n";
         }
-        return new Result(getPath(node), report);
-
+        System.out.println(report);
+        return new Result(getPath(node), count, duration / 1000000, node.getLevel(), node.getCost());
     }
 
     public Result solveDFS(int maxDepth) {
@@ -201,8 +207,8 @@ public class Puzzle {
                     "\nExecution time: " + duration / 1000000 + "ms" +
                     "\nSolution found at level: " + node.getLevel() + "\n";
         }
-
-        return new Result(getPath(node), report);
+        System.out.println(report);
+        return new Result(getPath(node), count, duration / 1000000, node.getLevel(), node.getCost());
     }
 
     public Result solveA(String H) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
@@ -254,7 +260,8 @@ public class Puzzle {
                     "\nSolution found at level: " + node.getLevel() +
                     "\nCost of the solution: " + node.getCost() + "\n";
         }
-        return new Result(getPath(node), report);
+        System.out.println(report);
+        return new Result(getPath(node), count, duration / 1000000, node.getLevel(), node.getCost());
     }
 
     // Hash
@@ -297,8 +304,8 @@ public class Puzzle {
                     "\nExecution time: " + duration/1000000 + "ms" +
                     "\nSolution found at level: " + node.getLevel() + "\n";
         }
-        return new Result(getPath(node), report);
-
+        System.out.println(report);
+        return new Result(getPath(node), count, duration / 1000000, node.getLevel(), node.getCost());
     }
 
     public Result solveHashDFS(int maxDepth) {
@@ -342,8 +349,8 @@ public class Puzzle {
                     "\nExecution time: " + duration / 1000000 + "ms" +
                     "\nSolution found at level: " + node.getLevel() + "\n";
         }
-
-        return new Result(getPath(node), report);
+        System.out.println(report);
+        return new Result(getPath(node), count, duration / 1000000, node.getLevel(), node.getCost());
     }
 
     public Result solveHashA(String H) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
@@ -395,7 +402,8 @@ public class Puzzle {
                     "\nSolution found at level: " + node.getLevel() +
                     "\nCost of the solution: " + node.getCost() + "\n";
         }
-        return new Result(getPath(node), report);
+        System.out.println(report);
+        return new Result(getPath(node), count, duration / 1000000, node.getLevel(), node.getCost());
     }
 
 }
