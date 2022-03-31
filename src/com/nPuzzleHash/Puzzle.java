@@ -35,10 +35,14 @@ public class Puzzle {
     }
 
     public Puzzle(int size, int start) {
+        this(size, start, 123804765);
+    }
+
+    public Puzzle(int size, int start, int goal) {
         this.size = size;
         this.solved = 0;
         this.start = new State(start, this.size);
-        this.goal = new State(123804765, this.size);
+        this.goal = new State(goal, this.size);
     }
 
     public void process() {
