@@ -229,7 +229,6 @@ public class MainWindowController {
     }
 
     private TranslateTransition tileDown(int i){
-        //the one above 0 goes down
         Pane b = getButton(textList.get(i));
         TranslateTransition transition = new TranslateTransition();
         transition.setNode(b);
@@ -239,7 +238,6 @@ public class MainWindowController {
     }
 
     private TranslateTransition tileUp(int i){
-        //the one below 0 goes up
         TranslateTransition transition = new TranslateTransition();
         transition.setNode(getButton(textList.get(i)));
         transition.setDuration(Duration.millis(duration));
@@ -248,7 +246,6 @@ public class MainWindowController {
     }
 
     private TranslateTransition tileRight(int i){
-        //the one left 0 goes right
         TranslateTransition transition = new TranslateTransition();
         transition.setNode(getButton(textList.get(i)));
         transition.setDuration(Duration.millis(duration));
@@ -258,7 +255,6 @@ public class MainWindowController {
     }
 
     private TranslateTransition tileLeft(int i){
-        //the one right 0 goes left
         TranslateTransition transition = new TranslateTransition();
         transition.setNode(getButton(textList.get(i)));
         transition.setDuration(Duration.millis(duration));

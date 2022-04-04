@@ -26,14 +26,3 @@ public class MainWindow extends Application {
         launch();
     }
 }
-
-/* TODO
-    Re-initialize           Done
-    Time                    Done
-    Not solvable            Done
-    2 other heuristics      Done
-    Cost with BFS and DFS   Done
-    Running                 Fuck it
-    Not found               Done
-    Goal issue              Done
-*/
