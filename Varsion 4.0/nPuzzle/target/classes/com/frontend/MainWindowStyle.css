@@ -1,0 +1,43 @@
+.root {
+    -fx-background-color: #222;
+    -fx-background-radius: 15;
+}
+
+.mainPane {
+    -fx-background-color: linear-gradient(to bottom right, #FF7F50, #6A5ACD);
+    -fx-background-radius: 15 15 15 15;
+}
+
+.highlight {
+    -fx-background-color: #00000025;
+    -fx-background-radius: 15;
+}
+
+
+.choice-box {
+    -fx-background-color: #00000025;
+    -fx-background-radius: 15;
+    -fx-mark-color: #00000025;
+    -fx-font-size: 20;
+}
+.choice-box .label{
+    -fx-text-fill: #ffffff;
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: #00000025;
+    -fx-background-radius: 15;
+
+
+}
+.choice-box .context-menu {
+    -fx-background-color: #00000095;
+    -fx-background-radius: 15;
+}
+
+.choice-box .menu-item > .label { -fx-text-fill: white; }
+.choice-box .menu-item:focused > .label { -fx-text-fill: white; }
+.text-input {
+    -fx-background-color: #00000025;
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+}
