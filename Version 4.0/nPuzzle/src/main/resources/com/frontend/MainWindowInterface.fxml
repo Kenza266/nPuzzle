@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="368.0" prefWidth="1001.0" stylesheets="@MainWindowStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frontend.MainWindowController">
+    <children>
+        <Pane layoutX="6.0" layoutY="5.0" prefHeight="357.0" prefWidth="989.0" styleClass="mainPane">
+            <children>
+            <TextField fx:id="input" layoutX="14.0" layoutY="32.0" prefHeight="58.0" prefWidth="244.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+                <Pane fx:id="btn1" layoutX="687.0" layoutY="52.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label fx:id="txt1" layoutX="27.0" layoutY="17.0" text="1" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="btn2" layoutX="770.0" layoutY="52.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label layoutX="27.0" layoutY="17.0" text="2" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="btn3" layoutX="854.0" layoutY="52.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label layoutX="27.0" layoutY="17.0" text="3" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="btn4" layoutX="687.0" layoutY="133.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label layoutX="27.0" layoutY="17.0" text="4" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="btn6" layoutX="854.0" layoutY="133.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label layoutX="27.0" layoutY="17.0" text="5" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="btn7" layoutX="687.0" layoutY="214.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label layoutX="27.0" layoutY="17.0" text="6" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="btn8" layoutX="770.0" layoutY="214.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label layoutX="27.0" layoutY="17.0" text="7" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="btn9" layoutX="854.0" layoutY="214.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+                    <children>
+                        <Label layoutX="27.0" layoutY="17.0" text="8" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            <ChoiceBox fx:id="checkBox" layoutX="14.0" layoutY="227.0" prefHeight="50.0" prefWidth="244.0">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="label" />
+                  <String fx:value="menu-item" />
+               </styleClass></ChoiceBox>
+            <Button fx:id="run" layoutX="68.0" layoutY="289.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" styleClass="highlight" text="Run" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Separator layoutX="306.0" layoutY="50.0" opacity="0.07" orientation="VERTICAL" prefHeight="259.0" prefWidth="6.0" styleClass="highlight" />
+            <Separator layoutX="616.0" layoutY="50.0" opacity="0.07" orientation="VERTICAL" prefHeight="259.0" prefWidth="6.0" />
+            <Pane layoutX="348.0" layoutY="23.0" prefHeight="50.0" prefWidth="222.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="nodes" layoutX="14.0" layoutY="4.0" prefHeight="42.0" prefWidth="202.0" text="Open nodes:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="348.0" layoutY="208.0" prefHeight="50.0" prefWidth="222.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="runtime" layoutX="14.0" layoutY="4.0" prefHeight="42.0" prefWidth="202.0" text="Runtime:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="348.0" layoutY="145.0" prefHeight="50.0" prefWidth="222.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="maxNode" layoutX="14.0" layoutY="4.0" prefHeight="42.0" prefWidth="202.0" text="Max nodes:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="348.0" layoutY="83.0" prefHeight="50.0" prefWidth="222.0" styleClass="highlight">
+               <children>
+                  <Label fx:id="depth" layoutX="14.0" layoutY="4.0" prefHeight="42.0" prefWidth="202.0" text="Path size:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="play" layoutX="367.0" layoutY="289.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="184.0" styleClass="highlight" text="Play sequence" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+                  <Label fx:id="lblResult" layoutX="14.0" layoutY="-1.0" prefHeight="30.0" prefWidth="232.0" text="Enter input sequence:" textFill="WHITE">
+                      <font>
+                          <Font name="Arial" size="18.0" />
+                      </font>
+                  </Label>
+            <Label fx:id="lblResult1" layoutX="14.0" layoutY="87.0" prefHeight="42.0" prefWidth="222.0" text="Enter target sequence :" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblResult11" layoutX="14.0" layoutY="187.0" prefHeight="42.0" prefWidth="222.0" text="Select algorithm:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="target" layoutX="14.0" layoutY="127.0" prefHeight="58.0" prefWidth="244.0" styleClass="highlight">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Pane fx:id="btn5" layoutX="770.0" layoutY="133.0" prefHeight="75.0" prefWidth="75.0" styleClass="highlight">
+               <children>
+                  <Label layoutX="27.0" layoutY="17.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="closeButton" layoutX="907.0" layoutY="310.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="75.0" styleClass="highlight" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+        <Pane fx:id="titlePane" opacity="0.0" prefHeight="0.0" prefWidth="175.0">
+            <children>
+                <ImageView fx:id="btnClose" fitHeight="16.0" fitWidth="16.0" layoutX="424.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btnMinimize" fitHeight="16.0" fitWidth="16.0" layoutX="402.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                    </image>
+                </ImageView>
+                <Label layoutX="49.0" layoutY="11.0" textFill="WHITE" />
+                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="24.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
